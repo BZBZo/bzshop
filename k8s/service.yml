@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bz-edge-service
+spec:
+  type: ClusterIP
+  selector:
+    app: bz-edge-service
+  ports:
+    - protocol: TCP
+      port: 90
+      targetPort: 9999
