@@ -19,7 +19,7 @@ public class AuthServiceClient {
     public Mono<Integer> validToken(String token) {
         token = token.replaceFirst("(?i)^Bearer ", "");
         return  authClient.post()
-                .uri("/token/validToken")
+                .uri("/token/gateValidToken")
                 .bodyValue(
                         ValidTokenRequestDTO.builder()
                                 .token(token)
