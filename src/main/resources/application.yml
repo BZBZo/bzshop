@@ -47,10 +47,10 @@ spring:
 #              args:
 #                name: catalogCircuitBreaker
 #                fallbackUri: forward:/catalog-fallback
-#        - id: order-route
-#          uri: ${ORDER_SERVICE_URL:http://localhost:9002}/orders
-#          predicates:
-#            - Path=/orders/**
+        - id: bz-ad-route
+          uri: ${BZ_AD_SERVICE_URL:http://localhost:9002}/orders
+          predicates:
+            - Path=/ad/
 #          filters:
 #            - name: CircuitBreaker
 #              args:
@@ -64,10 +64,10 @@ spring:
               args:
                 name: authCircuitBreaker
 
-#        - id: web-front-admin-route
-#          uri: ${WEB_FRONT_ADMIN_SERVICE:http://localhost:8886}/admin/
-#          predicates:
-#            - Path=/admin/**, /js/**, /css/**
+        - id: front-route
+          uri: ${BZ_FRONT_SERVICE:http://localhost:8884}/webs
+          predicates:
+            - Path=/webs/**, /js/**, /css/**
 
 resilience4j:
   circuitbreaker:
@@ -83,5 +83,12 @@ resilience4j:
         timeout-duration: 5s
 
 bzbzo:
+  bz-front-service-url: ${BZ_FRONT_SERVICE_URL:http://localhost:8084}/webs
   bz-auth-service-url: ${BZ_AUTH_SERVICE_URL:http://localhost:8085}/auths
+  bz-admin-service-url: ${BZ_ADMIN_SERVICE_URL:http://localhost:8086}/admin
+  bz-customer-service-url: ${BZ_CUSTOMER_SERVICE_URL:http://localhost:8087}/customer
+  bz-seller-service-url: ${BZ_SELLER_SERVICE_URL:http://localhost:8088}/seller
+  bz-ad-service-url: ${BZ_AD_SERVICE_URL:http://localhost:8089}/ad
+  bz-ootd-service-url: ${BZ_AD_SERVICE_URL:http://localhost:8090}/ootd
+
 
