@@ -31,14 +31,16 @@ spec:
               value: http://bz-front-service:90
 #            - name: BZ_PROD_SERVICE_URL
 #              value: http://bz-prod-service:90
-#            - name: BZ_SELLER_SERVICE_URL
-#              value: http://bz-seller-service:90
-#            - name: BZ_CUSTOMER_SERVICE_URL
-#              value: http://bz-customer-service:90
-#            - name : BZ_ADMIN_SERVICE
-#              value: http://bz-admin-service:90
-#            - name: BZ_OOTD_SERVICE
-#              value: http://bz-ootd-service:90
+            - name: BZ_SELLER_SERVICE_URL
+              value: http://bz-seller-service:90
+            - name: BZ_CUSTOMER_SERVICE_URL
+              value: http://bz-customer-service:90
+            - name : BZ_ADMIN_SERVICE
+              value: http://bz-admin-service:90
+            - name: BZ_OOTD_SERVICE
+              value: http://bz-ootd-service:90
+            - name: BZ_AD_SERVICE
+              value: http://bz-ad-service:90
 #            - name: SPRING_CLOUD_CONFIG_URI
 #              value: http://config-service:8888
 #            - name: SPRING_REDIS_HOST
