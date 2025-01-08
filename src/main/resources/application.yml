@@ -47,16 +47,38 @@ spring:
 #              args:
 #                name: catalogCircuitBreaker
 #                fallbackUri: forward:/catalog-fallback
-        - id: bz-ad-route
-          uri: ${BZ_AD_SERVICE_URL:http://localhost:9002}/orders
+
+        - id: bz-admin-route
+          uri: ${BZ_ADMIN_SERVICE_URL:http://localhost:8086}
           predicates:
-            - Path=/ad/
+            - Path=/admin/**
+
+        - id: bz-customer-route
+          uri: ${BZ_CUSTOMER_SERVICE_URL:http://localhost:8087}
+          predicates:
+            - Path=/customer/**
+
+        - id: bz-seller-route
+          uri: ${BZ_SELLER_SERVICE_URL:http://localhost:8088}
+          predicates:
+            - Path=/product/**
+
+        - id: bz-ad-route
+          uri: ${BZ_AD_SERVICE_URL:http://localhost:8089}
+          predicates:
+            - Path=/ad/**
+
+        - id: bz-ootd-route
+          uri: ${BZ_OOTD_SERVICE_URL:http://localhost:8090}
+          predicates:
+            - Path=/ootd/**
 #          filters:
 #            - name: CircuitBreaker
 #              args:
 #                name: orderCircuitBreaker
+
         - id: bz-auth-route
-          uri: ${BZ_AUTH_SERVICE_URL:http://localhost:8085}/auths
+          uri: ${BZ_AUTH_SERVICE_URL:http://localhost:8085}
           predicates:
             - Path=/auths/**
           filters:
@@ -64,10 +86,10 @@ spring:
               args:
                 name: authCircuitBreaker
 
-        - id: front-route
-          uri: ${BZ_FRONT_SERVICE:http://localhost:8884}/webs
-          predicates:
-            - Path=/webs/**, /js/**, /css/**
+#        - id: front-route
+#          uri: ${BZ_FRONT_SERVICE:http://localhost:8884}/webs
+#          predicates:
+#            - Path=/webs/**, /js/**, /css/**
 
 resilience4j:
   circuitbreaker:
@@ -83,12 +105,11 @@ resilience4j:
         timeout-duration: 5s
 
 bzbzo:
-  bz-front-service-url: ${BZ_FRONT_SERVICE_URL:http://localhost:8084}/webs
   bz-auth-service-url: ${BZ_AUTH_SERVICE_URL:http://localhost:8085}/auths
-  bz-admin-service-url: ${BZ_ADMIN_SERVICE_URL:http://localhost:8086}/admin
-  bz-customer-service-url: ${BZ_CUSTOMER_SERVICE_URL:http://localhost:8087}/customer
-  bz-seller-service-url: ${BZ_SELLER_SERVICE_URL:http://localhost:8088}/seller
-  bz-ad-service-url: ${BZ_AD_SERVICE_URL:http://localhost:8089}/ad
-  bz-ootd-service-url: ${BZ_AD_SERVICE_URL:http://localhost:8090}/ootd
+#  bz-admin-service-url: ${BZ_ADMIN_SERVICE_URL:http://localhost:8086}/admin
+#  bz-customer-service-url: ${BZ_CUSTOMER_SERVICE_URL:http://localhost:8087}/customer
+#  bz-seller-service-url: ${BZ_SELLER_SERVICE_URL:http://localhost:8088}/product
+#  bz-ad-service-url: ${BZ_AD_SERVICE_URL:http://localhost:8089}/ad
+#  bz-ootd-service-url: ${BZ_AD_SERVICE_URL:http://localhost:8090}/ootd
 
 
