@@ -10,6 +10,12 @@ logging:
     org.springframework.web: DEBUG
     io.github.resilience4j: DEBUG
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
 spring:
   application:
     name: bz-edge-service
