@@ -23,6 +23,23 @@ spring:
     timeout-per-shutdown-phase: 15s
   cloud:
     gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]': # 모든 경로에 대해 CORS 허용
+            allowedOrigins:
+              - "http://abad28a5040814f92809da7ca658b095-1521124890.ap-northeast-2.elb.amazonaws.com" # 프론트엔드 도메인
+              - "http://localhost:8084" # 로컬 테스트 환경
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders:
+              - "Authorization"
+              - "Content-Type"
+              - "X-Requested-With"
+            allowCredentials: true # 쿠키 기반 인증 허용
       default-filters:
         - name: Retry
           args:
