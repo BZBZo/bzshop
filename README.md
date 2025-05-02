@@ -1,6 +1,9 @@
 ## ERD & Architecture
 <img width="885" alt="image" src="https://github.com/user-attachments/assets/1aeb793c-6fd9-4f7b-a25e-d064976c5d3d" />
 
+# 광고 서비스
+<img width="603" alt="image" src="https://github.com/user-attachments/assets/9fe8e927-bfbf-4ed4-8d73-05999bab6ee8" />
+
 
 ## 팀원 및 팀 소개
 | 남인경 | 박경훈 | 이호영 |
