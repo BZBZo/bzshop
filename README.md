@@ -4,6 +4,27 @@
 # 광고 서비스
 <img width="603" alt="image" src="https://github.com/user-attachments/assets/9fe8e927-bfbf-4ed4-8d73-05999bab6ee8" />
 
+# 기술 스택
+Backend
+Java, SpringBoot, SpringData JPA
+
+인증/보안
+JWT, OAuth2, SpringSecurity
+
+DevOps&Infra
+AWS EKS, S3, CloudWatch, SQS, Docker
+
+Frontend
+HTML, CSS, JavaScript
+
+API
+TossPayments 위젯
+
+Database
+MySQL, Redis
+
+Colab&Tools
+Git, GitHub, Notion, Slack, Figma, Swagger
 
 ## 팀원 및 팀 소개
 | 남인경 | 박경훈 | 이호영 |
