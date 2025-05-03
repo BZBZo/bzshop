@@ -5,25 +5,32 @@
 <img width="603" alt="image" src="https://github.com/user-attachments/assets/9fe8e927-bfbf-4ed4-8d73-05999bab6ee8" />
 
 # 기술 스택
-**Backend**
+**Backend**   
+
 Java, SpringBoot, SpringData JPA  
 
-**인증/보안**
+**인증/보안**   
+
 JWT, OAuth2, SpringSecurity  
 
-**DevOps&Infra**
+**DevOps&Infra**   
+
 AWS EKS, S3, CloudWatch, SQS, Docker  
 
-**Frontend**
+**Frontend**   
+
 HTML, CSS, JavaScript  
 
-**API**
+**API**   
+
 TossPayments 위젯  
 
-**Database**
+**Database**   
+
 MySQL, Redis  
 
-**Colab&Tools**
+**Colab&Tools**   
+
 Git, GitHub, Notion, Slack, Figma, Swagger  
 
 ## 팀원 및 팀 소개
