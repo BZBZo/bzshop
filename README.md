@@ -10,6 +10,10 @@ MSA 아키텍처를 적용한, BZ#(비지샵)은 소셜커머스의 핵심인 �
 ## ERD & Architecture
 <img width="885" alt="image" src="https://github.com/user-attachments/assets/1aeb793c-6fd9-4f7b-a25e-d064976c5d3d" />
 
+# 인증 서비스
+Flow   
+<img width="385" alt="image" src="https://github.com/user-attachments/assets/8cd281fb-f2a8-43ca-b1bc-af414f702e78" />
+   
 # 광고 서비스
 <img width="603" alt="image" src="https://github.com/user-attachments/assets/9fe8e927-bfbf-4ed4-8d73-05999bab6ee8" />
 
