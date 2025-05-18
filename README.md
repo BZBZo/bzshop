@@ -18,6 +18,8 @@ Flow
 ## 광고 서비스
 <img width="603" alt="image" src="https://github.com/user-attachments/assets/9fe8e927-bfbf-4ed4-8d73-05999bab6ee8" />
 
+## OOTD(커뮤니티)
+
 # 기술 스택
 **Backend**   
 Java, SpringBoot, SpringData JPA  
