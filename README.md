@@ -19,7 +19,10 @@ Flow
 <img width="603" alt="image" src="https://github.com/user-attachments/assets/9fe8e927-bfbf-4ed4-8d73-05999bab6ee8" />
 
 ## OOTD(커뮤니티)
-
+마음에 드는 스타일에 반응하거나, 연관 상품에 접근하여 주문할 수 있는 소셜 게시판   
+- 자신의 코디 또는 상품 사용 모습 사진들을 여러 사람들에게 뽐낼 수 있음
+- 쇼핑몰 내의 상품들로 연관 상품 등록을 하여, 상품 접근성 및 구매율 향상
+   
 # 기술 스택
 **Backend**   
 Java, SpringBoot, SpringData JPA  
